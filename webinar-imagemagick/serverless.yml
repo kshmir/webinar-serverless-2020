@@ -1,0 +1,16 @@
+service: webinar-imagemagick
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+plugins:
+  - serverless-offline
+
+functions:
+  image:
+    handler: handler.image
+    events: 
+    - http:
+        path: image # Path for this endpoint
+        method: get # HTTP method for this endpoint
