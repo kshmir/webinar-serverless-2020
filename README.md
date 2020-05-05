@@ -17,6 +17,9 @@ Prerequisitos:
   - Nunca la instalaron, pueden empezar con este link: [https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
   - Luego deben setear las credenciales con este link: [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 
+Ambos ejemplos utilizan el framework [https://www.serverless.com/](serverless) ya que abstrae el proveedor cloud pero a su vez permite entender el proceso. El ejemplo sólo funciona en AWS Lambda.
+Hay otras alternativas que simplifican más el desarrollo como [https://vercel.com](vercel) o [https://apex.sh/up](up) suelen requerir menos configuración.
+
 --------
 
 English TBD

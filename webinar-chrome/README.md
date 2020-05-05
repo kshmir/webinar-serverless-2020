@@ -1,8 +1,5 @@
 Este ejemplo utiliza Google Chrome para descargar sitios web enteros como imágenes con el parámetro `url`.
 
-Se utiliza el framework [https://www.serverless.com/](serverless) ya que abstrae el proveedor de cloud y permite entender las abstracciones sobre las cuales estamos parados. El ejemplo sólo funciona en AWS Lambda.
-Hay otras alternativas que simplifican más el desarrollo como [https://vercel.com](vercel) o [https://apex.sh/up](up).
-
 # Cómo correr en Development
 
 ```
