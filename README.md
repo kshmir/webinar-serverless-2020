@@ -12,10 +12,10 @@ Ambos ejemplos son similares y resuelven problemas que pueden requerir alocar mu
 Prerequisitos:
 
 - Una *terminal* bash (los ejemplos están hechos para macos o linux).
+- Cuenta de Amazon AWS.
 - Amazon CLI Instalada.
-  - Si no lo hicieron, pueden empezar desde acá: [https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
-  - Luego deben setear las credenciales acá: [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
-
+  - Nunca la instalaron, pueden empezar con este link: [https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html)
+  - Luego deben setear las credenciales con este link: [https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)
 
 --------
 
