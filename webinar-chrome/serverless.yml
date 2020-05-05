@@ -14,7 +14,7 @@ plugins:
 custom:
   apigwBinary:
     types:
-      - '*/*'
+      - 'image/*'
 
 functions:
   image:
