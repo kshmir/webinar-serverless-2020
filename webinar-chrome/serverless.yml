@@ -1,11 +1,20 @@
-service: webinar-imagemagick
+service: webinar-chrome
 
 provider:
   name: aws
   runtime: nodejs12.x
+  deploymentBucket: webinar-chrome-bucket
 
 plugins:
   - serverless-offline
+  - serverless-layers
+  - serverless-apigw-binary
+  - serverless-apigwy-binary
+
+custom:
+  apigwBinary:
+    types:
+      - '*/*'
 
 functions:
   image:
@@ -14,3 +23,4 @@ functions:
     - http:
         path: urlImage # Path for this endpoint
         method: get # HTTP method for this endpoint
+        contentHandling: CONVERT_TO_BINARY

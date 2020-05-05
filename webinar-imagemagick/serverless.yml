@@ -1,11 +1,23 @@
-service: webinar-imagemagick
+service: webinar-images
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs10.x
+  deploymentBucket: webinar-images-bucket
 
 plugins:
   - serverless-offline
+  - serverless-layers
+  - serverless-apigw-binary
+  - serverless-apigwy-binary
+
+custom:
+  apigwBinary:
+    types:
+      - '*/*'
+  serverless-layers:
+    - staticArn:
+        arn: arn:aws:lambda:us-east-1:739640995812:layer:image-magick:1
 
 functions:
   image:
@@ -14,3 +26,4 @@ functions:
     - http:
         path: image # Path for this endpoint
         method: get # HTTP method for this endpoint
+        contentHandling: CONVERT_TO_BINARY
