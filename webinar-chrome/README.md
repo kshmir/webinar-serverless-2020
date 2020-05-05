@@ -18,3 +18,5 @@ Si tienen configurada su Amazon CLI, una vez hechos esos cambios, deberían pode
 sls deploy
 curl "https://<sustackid>.execute-api.us-east-1.amazonaws.com/dev/urlImage?url=https://google.com" > google.com.jpeg
 ```
+
+UN PROBLEMA: Sitios como nytimes.com no funcionan ya que por algún motivo la función no funciona con videos y sonido. Esto se debe a la versión de chrome/puppeteer, seguramente una versión más vieja funcione. [https://github.com/alixaxel/chrome-aws-lambda/issues/104](https://github.com/alixaxel/chrome-aws-lambda/issues/104)
